@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* home/plants */
+.home span{
+    color: #2c6d31;
+    font-size: small;
+    padding-left: 0.5rem;
+}
+.home span:first-child{
+    text-decoration: underline;
+}
+.home span:last-child{
+    color: gray;
+}
+
+/* Plant heading */
+.plant-heading{
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.plant-heading>*{
+    margin-top:0.5rem;
+    margin-left: 0.5rem;
+}
+.plant-heading strong{
+    color:rgb(105, 104, 104);
+}
+.plant-heading p{
+    font-size: medium;
+}
+
+#simpleDropdown{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    margin-right: 1rem;
+    width: 6rem;
+}
