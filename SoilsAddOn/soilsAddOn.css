@@ -1,0 +1,50 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a,
+a:hover {
+     text-decoration: none;
+}
+
+#soilsAddOn .inner-grid {
+     display: grid;
+     grid-template-columns: 300px 1fr;
+     gap: 20px;
+}
+
+#soilsAddOn .price-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 50px;
+     gap: 20px;
+}
+
+#soilsAddOn .product-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+}
+
+#soilsAddOn .product-card img {
+     transition: all 0.3s linear;
+     aspect-ratio: 1/1;
+     object-fit: cover;
+}
+
+#soilsAddOn .product-card:hover img {
+     transform: scale(1.1);
+}
+
+#soilsAddOn .product-card .offer-tag {
+     border-bottom-left-radius: 100px;
+}
+
+#soilsAddOn .product-card .name {
+     display: -webkit-box;
+     -webkit-line-clamp: 4;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     height: 96px;
+}
