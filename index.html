@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: rgb(8, 94, 8);
+        }
+        .nav-div-1{
+            display: flex;
+            align-items: center;
+        }
+        .nav-div-1>ul{
+            display: flex;
+            width: 35%;
+            margin-left: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover{
+            color: rgb(247, 174, 56);
+        }
+        .nav-div-1>ul>.nav-li{
+            list-style: none;
+            padding: 10px 10px;
+            font-size: 1.3rem;
+           
+        }
+        .nav-div-1>P{
+            font-size: 1rem;
+        }
+        .nav-div-2{
+            background-color: white;
+            padding: 20px 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-div-2>.div-image{
+            height:80px;
+            width: 220px;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        .nav-div-2 img{
+            height: 100%;
+            width: 100%;
+        }
+        .nav-div-2>.contacts{
+            margin: 20px;
+            cursor: pointer;
+            /* border: 1px solid red; */
+        }
+        .nav-div-2 .input-sec{
+            width: 420px;
+             /* border: 1px solid red; */
+             margin-right: 70px;
+             margin-left: 60px;
+             display: flex;
+             align-items: center;
+        }
+        .nav-div-2 .input-sec input{
+            padding: 5px;
+            width:350px
+        }
+        .nav-div-2 .input-sec div{
+           /* border: 1px solid blue; */
+           height: 29px;
+           padding: 2px 3px;
+           background-color: rgb(247, 174, 56);
+        }
+        .nav-div-2 .input-sec div i{
+            font-size: 1rem;
+            color: white;
+            /* padding: 3px 0px; */
+        }
+        .nav-div-2>ul{
+            display: flex;
+            /* border: 1px solid red; */
+            margin-left: auto;
+            justify-content: space-evenly;
+        }
+        .nav-div-2>ul>.nav-div-2-li{
+            list-style: none;
+            padding: 0 25px;
+        }
+        .nav-div-2>ul>.nav-div-2-li>a{
+            /* list-style: none; */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-div-1">
+            <ul>
+                <li class="nav-li"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></i></li>
+                <li class="nav-li"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            <p>
+                <a href="#">Get Disgner Pots at Rs 1. We provide free next day delivery on orders recieved by 7 PM</a>
+            </p>
+        </div>
+        <div class="nav-div-2">
+            <div class="div-image">
+                <a href="#">
+                    <img src="landing-page-images/final-logo-01-1-_cropped-1-480x480.avif" alt="">
+                </a>
+            </div>
+            <div class="contacts">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>452001 All over India (Change)</span>
+            </div>  
+            <div class="input-sec">
+                <input type="text" placeholder="Search By Products">
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>  
+            <ul>
+                <li class="nav-div-2-li"><a href="">Get Help</a></li>
+                <li class="nav-div-2-li"><a href="">Login</a></li>
+                <li class="nav-div-2-li"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/f841d82552.js" crossorigin="anonymous">       
+    </script>
+</body>
+</html>
