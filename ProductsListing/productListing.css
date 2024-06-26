@@ -9,39 +9,49 @@ a:hover {
      text-decoration: none;
 }
 
-#soilsAddOn .inner-grid {
+#product-listing-page .inner-grid {
      display: grid;
      grid-template-columns: 300px 1fr;
      gap: 20px;
 }
 
-#soilsAddOn .price-grid {
+#product-listing-page .price-grid {
      display: grid;
      grid-template-columns: 1fr 1fr 50px;
      gap: 20px;
 }
 
-#soilsAddOn .product-grid {
+#product-listing-page .sort-dropdown .sort-dropdown-list {
+     width: 250px;
+     top: 100%;
+     display: none;
+}
+
+#product-listing-page .sort-dropdown:hover .sort-dropdown-list {
+     display: block;
+}
+
+#product-listing-page .product-grid {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 20px;
 }
 
-#soilsAddOn .product-card img {
+#product-listing-page .product-card img {
      transition: all 0.3s linear;
      aspect-ratio: 1/1;
      object-fit: cover;
 }
 
-#soilsAddOn .product-card:hover img {
+#product-listing-page .product-card:hover img {
      transform: scale(1.1);
 }
 
-#soilsAddOn .product-card .offer-tag {
+#product-listing-page .product-card .offer-tag {
      border-bottom-left-radius: 100px;
 }
 
-#soilsAddOn .product-card .name {
+#product-listing-page .product-card .name {
      display: -webkit-box;
      -webkit-line-clamp: 4;
      -webkit-box-orient: vertical;

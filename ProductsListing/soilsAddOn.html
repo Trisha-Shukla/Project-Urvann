@@ -9,10 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="soilsAddOn.css" />
+    <link rel="stylesheet" href="productListing.css" />
   </head>
   <body>
-    <div id="soilsAddOn" class="p-2">
+    <div id="product-listing-page" class="p-2">
       <div class="top-block mb-4">
         <div class="breadcrumb flex gap-1 text-xs text-slate-600 mb-3">
           <a href="/" class="underline text-lime-600">HOME</a>
@@ -23,6 +23,40 @@
         <div class="flex justify-between gap-2 text-slate-600">
           <div>
             Showing <span class="font-bold text-black">06</span> Products
+          </div>
+          <div class="relative sort-dropdown">
+            <div class="text-xs font-bold cursor-pointer">
+              SORT BY&nbsp;<i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div
+              class="absolute sort-dropdown-list right-0 shadow-lg bg-white z-10 rounded"
+            >
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Best Seller
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Price: Low to High
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Price: High to Low
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Name: Ascending Order
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Name: Descending Order
+              </div>
+            </div>
           </div>
         </div>
       </div>
