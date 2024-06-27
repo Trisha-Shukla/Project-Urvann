@@ -3,14 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    background-color: rgb(8, 94, 8);
-    /* position: fixed; */
+body{
+    font-family: Roboto;
+}
+.whatsapp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 70px;
+    left:40px;
+    color: #fff;
+    background: rgb(77, 194, 71) none repeat scroll 0% 0% !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 3px 3px 10px #969696;
+    z-index: 100;
+}
+.my-float{
+    margin-top:10px ;
+    font-size: 38px;
+}
+.whatsapp:hover{
+    color: orange;
+}
+
+nav{    
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 0;
     width: 100%;
+    background-color: eaf0ea ;
 }
 .nav-div-1{
     display: flex;
     align-items: center;
+    background-color: rgb(8, 94, 8);
 }
 .nav-div-1>ul{
     display: flex;
@@ -99,6 +128,9 @@ nav a:hover{
     /* list-style: none; */
     color: black;
 }
+.nav-div-3{
+    background-color: rgb(8, 94, 8);
+}
 .nav-div-3>ul{
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +138,10 @@ nav a:hover{
 .nav-div-3>ul>li{
     list-style: none;
     padding: 10px;
+}
+.bg-image{
+    padding-top: 176px;
+    min-height: 650px;
 }
 .sec-1>{
     /* height: 90vh; */
@@ -363,6 +399,7 @@ margin: 10px;
 .sub-embed{
 margin: 10px;
 }
+
 .grid-container-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; /* Two equal columns */
@@ -388,7 +425,31 @@ margin: 10px;
     .grid-item-1:nth-child(4) {
         grid-column: span 2;
         /* grid-row:span 2; */
+        }  
+        .selection{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        .selection-sub{
+            margin: 10px;
+            padding: 10px 10px;
+            border: 2px solid darkgray;
+            cursor: pointer;
+            border-radius: 100px;
+           
+        }
+        .selection-sub-1{
+            color: white;
+            background-color: rgb(142, 203, 51);
+        }
+        .selection-sub-2{
+            color: black;
+            background-color: rgb(202, 211, 213);
+        }
+        .selection-sub-2:hover{
+            opacity: .5;
+        }  
 .grid-container-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; /* Two equal columns */
