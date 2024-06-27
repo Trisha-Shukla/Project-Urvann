@@ -51,10 +51,30 @@ a:hover {
      border-bottom-left-radius: 100px;
 }
 
-#product-listing-page .product-card .name {
-     display: -webkit-box;
-     -webkit-line-clamp: 4;
-     -webkit-box-orient: vertical;
-     overflow: hidden;
-     height: 96px;
+@media screen and (max-width: 991px) {
+     #product-listing-page .product-grid {
+          grid-template-columns: repeat(2, 1fr);
+     }
+}
+
+@media screen and (min-width: 768px) {
+     #product-listing-page .product-card .name {
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          height: 96px;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     #product-listing-page .product-grid {
+          grid-template-columns: repeat(1, 1fr);
+     }
+}
+
+@media screen and (max-width: 576px) {
+     #product-listing-page .inner-grid {
+          grid-template-columns: 1fr;
+     }
 }

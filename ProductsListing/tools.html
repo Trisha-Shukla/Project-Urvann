@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="productListing.css" />
+  </head>
+  <body>
+    <div id="product-listing-page" class="p-2">
+      <div class="top-block mb-4">
+        <div class="breadcrumb flex gap-1 text-xs text-slate-600 mb-3">
+          <a href="/" class="underline text-lime-600">HOME</a>
+          <div>/</div>
+          <div>TOOLS</div>
+        </div>
+        <h1 class="text-4xl mb-3">Tools</h1>
+        <div class="flex justify-between gap-2 text-slate-600">
+          <div>
+            Showing <span class="font-bold text-black">06</span> Products
+          </div>
+          <div class="relative sort-dropdown">
+            <div class="text-xs font-bold cursor-pointer">
+              SORT BY&nbsp;<i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div
+              class="absolute sort-dropdown-list right-0 shadow-lg bg-white z-10 rounded"
+            >
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Best Seller
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Price: Low to High
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Price: High to Low
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Name: Ascending Order
+              </div>
+              <div
+                class="text-slate-500 px-2 py-1 hover:text-red-500 cursor-pointer"
+              >
+                Name: Descending Order
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner-grid">
+        <aside>
+          <div class="block pb-4 mb-3 border-b">
+            <div class="flex justify-between items-center gap-2 mb-3">
+              <div class="font-bold text-sm">CATEGORIES</div>
+              <div class="border text-slate-400 leading-3 p-1 text-xs rounded">
+                <i class="fa-solid fa-minus"></i>
+              </div>
+            </div>
+            <div class="flex justify-between gap-2 mb-3">
+              <div class="font-bold text-sm text-lime-600">Tools</div>
+              <div><i class="fa-solid fa-minus"></i></div>
+            </div>
+            <div class="list">
+              <div class="text-slate-500">
+                <div class="mb-2">
+                  <i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp;Watering
+                  Tools
+                </div>
+                <div class="mb-2">
+                  <i class="fa-solid fa-angle-right"></i>&nbsp;&nbsp;Gardening
+                  Tools
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block pb-4 mb-3 border-b">
+            <div class="flex justify-between items-center gap-2 mb-3">
+              <div class="font-bold text-sm">PRICE</div>
+              <div class="border text-slate-400 leading-3 p-1 text-xs rounded">
+                <i class="fa-solid fa-minus"></i>
+              </div>
+            </div>
+            <div class="flex justify-between items-center gap-2 mb-3">
+              <div class="text-slate-500 text-xs">₹29</div>
+              <div class="text-slate-500 text-xs">₹25,000</div>
+            </div>
+            <div class="price-grid">
+              <div class="border text-slate-600 p-2 text-xs rounded">29</div>
+              <div class="border text-slate-600 p-2 text-xs rounded">25000</div>
+              <div
+                class="bg-yellow-500 text-xs leading-8 text-center text-white rounded"
+              >
+                GO
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section>
+          <div class="pb-4 mb-2 border-b">
+            <div class="head text-2xl mb-2">
+              Buy Gardening Tools And Equipment Online In India at Urvann
+            </div>
+            <div class="text-slate-600 text-sm">
+              Discover the joy of gardening with Urvann, your premier
+              destination for top-notch gardening tools and equipment in India.
+              <a href="#" class="text-lime-700 underline">Read More</a>
+            </div>
+          </div>
+          <div class="product-grid">
+            <div class="product-card p-5 shadow">
+              <div class="image mb-2 overflow-hidden relative">
+                <img src="tools/tools-1.avif" alt="..." class="w-full" />
+                <div
+                  class="offer-tag absolute right-0 top-0 bg-red-700 text-white pt-1 pe-1 ps-4 pb-4 text-xs"
+                >
+                  52% <br />
+                  Off
+                </div>
+              </div>
+              <div class="name text-center mb-5">
+                Spray Trigger (any colour) - 1 pcs
+              </div>
+              <div class="price flex justify-center items-end gap-2 mb-1">
+                <div class="font-bold text-sm">₹12</div>
+                <div class="text-slate-400 text-xs line-through">₹25</div>
+              </div>
+              <div
+                class="rating flex justify-center items-end gap-2 text-sm mb-2"
+              >
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="text-slate-600">23 Reviews</div>
+              </div>
+              <button
+                class="w-full text-xs bg-green-800 text-white p-2 rounded-3xl"
+              >
+                Add to Cart&nbsp;&nbsp;<i
+                  class="fa-solid fa-basket-shopping"
+                ></i>
+              </button>
+            </div>
+            <div class="product-card p-5 shadow">
+              <div class="image mb-2 overflow-hidden relative">
+                <img src="tools/tools-2.avif" alt="..." class="w-full" />
+                <div
+                  class="offer-tag absolute right-0 top-0 bg-red-700 text-white pt-1 pe-1 ps-4 pb-4 text-xs"
+                >
+                  18% <br />
+                  Off
+                </div>
+              </div>
+              <div class="name text-center mb-5">
+                Premium Watering Spray Pump - 2 Ltr
+              </div>
+              <div class="price flex justify-center items-end gap-2 mb-1">
+                <div class="font-bold text-sm">₹189</div>
+                <div class="text-slate-400 text-xs line-through">₹230</div>
+              </div>
+              <div
+                class="rating flex justify-center items-end gap-2 text-sm mb-2"
+              >
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="text-slate-600">12 Reviews</div>
+              </div>
+              <button
+                class="w-full text-xs bg-green-800 text-white p-2 rounded-3xl"
+              >
+                Add to Cart&nbsp;&nbsp;<i
+                  class="fa-solid fa-basket-shopping"
+                ></i>
+              </button>
+            </div>
+            <div class="product-card p-5 shadow">
+              <div class="image mb-2 overflow-hidden relative">
+                <img src="tools/tools-3.avif" alt="..." class="w-full" />
+                <div
+                  class="offer-tag absolute right-0 top-0 bg-red-700 text-white pt-1 pe-1 ps-4 pb-4 text-xs"
+                >
+                  63% <br />
+                  Off
+                </div>
+              </div>
+              <div class="name text-center mb-5">Moss stick 3 ft.</div>
+              <div class="price flex justify-center items-end gap-2 mb-1">
+                <div class="font-bold text-sm">₹89</div>
+                <div class="text-slate-400 text-xs line-through">₹239</div>
+              </div>
+              <div
+                class="rating flex justify-center items-end gap-2 text-sm mb-2"
+              >
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="text-slate-600">23 Reviews</div>
+              </div>
+              <button
+                class="w-full text-xs bg-green-800 text-white p-2 rounded-3xl"
+              >
+                Add to Cart&nbsp;&nbsp;<i
+                  class="fa-solid fa-basket-shopping"
+                ></i>
+              </button>
+            </div>
+            <div class="product-card p-5 shadow">
+              <div class="image mb-2 overflow-hidden relative">
+                <img src="tools/tools-4.avif" alt="..." class="w-full" />
+                <div
+                  class="offer-tag absolute right-0 top-0 bg-red-700 text-white pt-1 pe-1 ps-4 pb-4 text-xs"
+                >
+                  17% <br />
+                  Off
+                </div>
+              </div>
+              <div class="name text-center mb-5">
+                Green Premium Watering Can - 10 Ltr
+              </div>
+              <div class="price flex justify-center items-end gap-2 mb-1">
+                <div class="font-bold text-sm">₹299</div>
+                <div class="text-slate-400 text-xs line-through">₹360</div>
+              </div>
+              <div
+                class="rating flex justify-center items-end gap-2 text-sm mb-2"
+              >
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="text-slate-600">6 Reviews</div>
+              </div>
+              <button
+                class="w-full text-xs bg-green-800 text-white p-2 rounded-3xl"
+              >
+                Add to Cart&nbsp;&nbsp;<i
+                  class="fa-solid fa-basket-shopping"
+                ></i>
+              </button>
+            </div>
+            <div class="product-card p-5 shadow">
+              <div class="image mb-2 overflow-hidden relative">
+                <img src="tools/tools-5.avif" alt="..." class="w-full" />
+                <div
+                  class="offer-tag absolute right-0 top-0 bg-red-700 text-white pt-1 pe-1 ps-4 pb-4 text-xs"
+                >
+                  57% <br />
+                  Off
+                </div>
+              </div>
+              <div class="name text-center mb-5">
+                Gardening Narrow Trovel - 2 inch
+              </div>
+              <div class="price flex justify-center items-end gap-2 mb-1">
+                <div class="font-bold text-sm">₹119</div>
+                <div class="text-slate-400 text-xs line-through">₹279</div>
+              </div>
+              <div
+                class="rating flex justify-center items-end gap-2 text-sm mb-2"
+              >
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="text-slate-600">13 Reviews</div>
+              </div>
+              <button
+                class="w-full text-xs bg-green-800 text-white p-2 rounded-3xl"
+              >
+                Add to Cart&nbsp;&nbsp;<i
+                  class="fa-solid fa-basket-shopping"
+                ></i>
+              </button>
+            </div>
+            <div class="product-card p-5 shadow">
+              <div class="image mb-2 overflow-hidden relative">
+                <img src="tools/tools-6.avif" alt="..." class="w-full" />
+                <div
+                  class="offer-tag absolute right-0 top-0 bg-red-700 text-white pt-1 pe-1 ps-4 pb-4 text-xs"
+                >
+                  63% <br />
+                  Off
+                </div>
+              </div>
+              <div class="name text-center mb-5">Moss stick 2 ft.</div>
+              <div class="price flex justify-center items-end gap-2 mb-1">
+                <div class="font-bold text-sm">₹69</div>
+                <div class="text-slate-400 text-xs line-through">₹189</div>
+              </div>
+              <div
+                class="rating flex justify-center items-end gap-2 text-sm mb-2"
+              >
+                <div class="text-yellow-400">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="text-slate-600">24 Reviews</div>
+              </div>
+              <button
+                class="w-full text-xs bg-green-800 text-white p-2 rounded-3xl"
+              >
+                Add to Cart&nbsp;&nbsp;<i
+                  class="fa-solid fa-basket-shopping"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
