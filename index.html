@@ -5,31 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .selection{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+       @media screen and (max-width: 767px) {
+        .bg-image{
+            min-height: 120px;
         }
-        .selection-sub{
-            margin: 10px;
-            padding: 10px 10px;
-            border: 2px solid darkgray;
-            cursor: pointer;
-            border-radius: 100px;
-           
-        }
-        .selection-sub-1{
-            color: white;
-            background-color: rgb(142, 203, 51);
-        }
-        .selection-sub-2{
-            color: black;
-            background-color: rgb(202, 211, 213);
-        }
-        .selection-sub-2:hover{
-            opacity: .5;
-        }
+       }
+       @media screen and (max-width: 500px) {
+        .whatsapp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 70px;
+    left:20px;
+    color: #fff;
+    background: rgb(77, 194, 71) none repeat scroll 0% 0% !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 3px 3px 10px #969696;
+    z-index: 100;
+}}
+@media screen and (max-width: 600px) {
+        .whatsapp{   
+    bottom: 110px;
+}
+
+       }
     </style>
 </head>
 <body>
@@ -41,13 +48,16 @@
     <nav>
         <div class="nav-div-1">
             <ul>
-                <li class="nav-li"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li class="nav-li"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                <li class="nav-li"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
                 <li class="nav-li"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa fa-youtube"></i></a></li>
                 <li class="nav-li"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></i></li>
                 <li class="nav-li"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li class="nav-li"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="nav-li"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                
+                
+                
             </ul>
             <p>
                 <a href="#">Get Disgner Pots at Rs 1. We provide free next day delivery on orders recieved by 7 PM</a>
@@ -104,11 +114,12 @@
             <h2>POPULAR CATEGORIES</h2>
             <ul>
             <li><a href="" class="a-1"><img src="landing-page-images/flowers-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
-            <li><a href="" class="a-1"><img src="landing-page-images/flowers-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
-            <li><a href="" class="a-1"><img src="landing-page-images/flowers-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
-            <li><a href="" class="a-1"><img src="landing-page-images/flowers-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
-            <li><a href="" class="a-1"><img src="landing-page-images/flowers-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
-            <li><a href="" class="a-1"><img src="landing-page-images/flowers-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
+            <li><a href="" class="a-1"><img src="landing-page-images/oxygen-plant-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
+            <li><a href="" class="a-1"><img src="landing-page-images/ceramic-planters-2--300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
+            <li><a href="" class="a-1"><img src="landing-page-images/soil-addons-300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
+            <li><a href="" class="a-1"><img src="landing-page-images/tools-4--300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
+            <li><a href="" class="a-1"><img src="landing-page-images/indoor-plants-6--300X300.avif" alt=""></a> <a href="" class="a-2">Flowering Plant</a></li>
+            
             </ul>
         </div>
     </section>
@@ -133,16 +144,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1 </span>
+                        <span class="rupee">₹1 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <span style="color: rgb(58, 57, 57); font-size: 10px;">32 reviews</span>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -150,29 +161,30 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">67% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a26470243e4cea23c27031/1percent20-114--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>8 inch Teracotta blue classy plastic pot</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹19 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button class="button-sec">
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -180,11 +192,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="text-align: right;" >Off</span></span>
+                        <span class="right">77% <br><span style="text-align: right;" >Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a264ec65151817e1e809b5/1percent20-112--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -194,77 +206,78 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹39 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">87% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/659e59f305e6d05b921aff57/1percent20-135--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>5 inch Teracotta red classy plastic tray</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹19 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
-                            Add tp cart
+                        <button class="star-foot">
+                            Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
             
                     
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">63% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/658d773adea4dd70370ec43a/1percent20-111--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>6 inch Black premium tray pot</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹119 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -276,25 +289,26 @@
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a264ae928afeaac0ffb33c/1percent20-113--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>8 inch Teracotta white classy plastic pot</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹1 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -336,11 +350,11 @@
             <ul class="lightening-container">
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">83% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/665db34a49824b450230c41d/slide2-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -350,16 +364,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1 </span>
+                        <span class="rupee">₹35 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <span style="color: rgb(58, 57, 57); font-size: 10px;">32 reviews</span>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -367,11 +381,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">26% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/6661bb6479bd6aa3031373fc/whatsapp-image-2024-05-30-at-2-52-56-pm-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -381,15 +395,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹149 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button class="button-sec">
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -397,11 +412,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="text-align: right;" >Off</span></span>
+                        <span class="right">79% <br><span style="text-align: right;" >Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/665db34e56a2f09f61ef8b1b/slide1-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -411,27 +426,27 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹15 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">76% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/665db34e56a2f09f61ef8b1b/slide1-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -441,29 +456,29 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹19 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
-                            Add tp cart
+                        <button class="star-foot">
+                            Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
             
                     
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">80% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/665db35eadff985afd4658c4/slide2-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -473,15 +488,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹59 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -489,11 +505,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">62% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/664d8148a995aa70c7e5a3d4/img_7126-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -503,20 +519,25 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹79 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
-                </li>        
+                </li>
+            
                     
+
+
+ 
                 </ul>
             </div>
         
@@ -529,30 +550,30 @@
             <ul class="lightening-container">
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">61% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64abf448f760ed7b62e46126/17-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Set Of 2 - Tulsi (Rama & Shyama) In 4 Inch Nursery Bag</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1 </span>
+                        <span class="rupee">₹89 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <span style="color: rgb(58, 57, 57); font-size: 10px;">32 reviews</span>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -560,29 +581,30 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">63% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/6670469b120140b1fdfa2e40/1percent20-130--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Set Of 2 - Tulsi (Rama & Shyama) in 5 Inch Nursery Pot</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹119 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button class="button-sec">
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -590,91 +612,92 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="text-align: right;" >Off</span></span>
+                        <span class="right">64% <br><span style="text-align: right;" >Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/6645c45ff01099a70065157f/1-3--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Set of 3 - Baby Croton in 4 Inch Nursery Bag</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹39 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">67% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65eb1f451ba26495e0d01127/whatsapppercent20imagepercent202024-03-08percent20atpercent202-33-43percent20pm-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Set of 2 - Hibiscus Dwarf Hybrid / Gudhal (any colour) in 4 Inch Nursery Bag</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹99 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
-                            Add tp cart
+                        <button class="star-foot">
+                            Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
             
                     
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">81% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/663b7f3be127585a6649a78c/img_4961-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Set Of 2 - Tulsi (Rama & Shyama) in 5 Inch Nursery Pot</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹149 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -682,29 +705,30 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">63% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64b541034992acd2e47aa87b/4-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Set Of 2 - Tulsi (Rama & Shyama) in 5 Inch Nursery Pot</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹119 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -720,16 +744,16 @@
     </section>
     <div class="grid-container-1">
         <div class="grid-item-1">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ecd0c5dcaf96dbd4f23/flowering-plants_new-864x432.png" alt="Flowering Plants">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64465e8d1b967609b4cc8e5a/plastic-pots-640x640.png" alt="Flowering Plants">
         </div>
         <div class="grid-item-1">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443f1576444ef9a4fb7d2e/bonsai-plants-432x432.png" alt="Bonsai Plants">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64465ecc4dbc750a3a7e698a/clay-pots-480x480.png" alt="Bonsai Plants">
         </div>
         <div class="grid-item-1">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ef453fd07f98c29875d/low-maintenance-432x432.png" alt="Low-maintenance Plants">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64465eeb4dbc750a3a7e6d5c/grow-bags-480x480.png" alt="Low-maintenance Plants">
         </div>
         <div class="grid-item-1">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ee10c5dcaf96dbd5021/succulents-2--432x432.png" alt="Succulents">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64465f0221fb35094901e5b3/ceramic-pots-640x640.png" alt="Succulents">
         </div>
         <!-- <div class="grid-item-1">
             <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ef453fd07f98c29875d/low-maintenance-432x432.png" alt="Low-maintenance Plants">
@@ -762,16 +786,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1 </span>
+                        <span class="rupee">₹1 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <span style="color: rgb(58, 57, 57); font-size: 10px;">32 reviews</span>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -779,29 +803,30 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">84% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/661e87f8ef211cafe8aae899/1percent20-7--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Hibiscus Double (any colour) in 4 Inch Nursery Bag</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹35 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button class="button-sec">
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -809,73 +834,73 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="text-align: right;" >Off</span></span>
+                        <span class="right">74% <br><span style="text-align: right;" >Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65b2470f979da443fd966def/1percent20-107--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Morpankhi Desi in 6 Inch Nursery Pot</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹69 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">72% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/661e8753e9d092b53a38bfd5/1percent20-20--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
                         <a href="">
-                            <p>8 inch Teracotta red classy plastic pot</p>
+                            <p>Mogra / Jasmine in 4 Inch Nursery Bag</p>
                         </a>
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹39</span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
-                            Add tp cart
+                        <button class="star-foot">
+                            Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
             
                     
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">61% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64abf448f760ed7b62e46126/17-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -885,15 +910,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹89 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -901,11 +927,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">63% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/658596d5f987480447c908c4/screenshotpercent202023-12-21percent20184934-640x640.png" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -915,15 +941,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹89 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -939,19 +966,19 @@
     </section>
     <div class="grid-container-2">
         <div class="grid-item-2">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ecd0c5dcaf96dbd4f23/flowering-plants_new-864x432.png" alt="Flowering Plants">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64514fde1d5e7c191bd97467/6-banners_seeds-332x262.png" alt="Flowering Plants">
         </div>
         <div class="grid-item-2">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443f1576444ef9a4fb7d2e/bonsai-plants-432x432.png" alt="Bonsai Plants">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64514fa4a0f9cdbaaff5a04a/6-banners_soil-fertilizers-600x476.png" alt="Bonsai Plants">
         </div>
         <div class="grid-item-2">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ef453fd07f98c29875d/low-maintenance-432x432.png" alt="Low-maintenance Plants">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64514f851223de18e39f8bb8/6-banners_stands-and-shelves-332x262.png" alt="Low-maintenance Plants">
         </div>
         <div class="grid-item-2">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ee10c5dcaf96dbd5021/succulents-2--432x432.png" alt="Succulents">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64514fc9046a4918b4f3b306/6-banners_gardening-tools-332x262.png" alt="Succulents">
         </div>
         <div class="grid-item-2">
-            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/64443ef453fd07f98c29875d/low-maintenance-432x432.png" alt="Low-maintenance Plants">
+            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/645151d41223de18e39fce29/6-banners_decor-accessories-332x262.png" alt="Low-maintenance Plants">
         </div>
         
     </div>
@@ -964,11 +991,11 @@
             <ul class="lightening-container">
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">57% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/6645c12bd5d7946567e65fd2/54-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -978,16 +1005,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1 </span>
+                        <span class="rupee">₹149 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <span style="color: rgb(58, 57, 57); font-size: 10px;">32 reviews</span>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -995,11 +1022,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">63% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/6645d7cb38174ab8e240fcbb/29-1--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -1009,15 +1036,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹199 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button class="button-sec">
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -1025,11 +1053,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="text-align: right;" >Off</span></span>
+                        <span class="right">63% <br><span style="text-align: right;" >Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/650066db38f6f63c9c0557a6/1percent20-70--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -1039,27 +1067,27 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹259</span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">63% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65ae07fde3bc06a025f2fd3e/266-640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -1069,29 +1097,29 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹189 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
-                            Add tp cart
+                        <button class="star-foot">
+                            Add to cart
                         </button>
-                        <br>
                     </div>
                 </li>
             
                     
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">63% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65ae0565dcf6168a25d5af0f/23-1--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -1101,15 +1129,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹89 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -1117,11 +1146,11 @@
             
                 <li class="container-sec">
                     <div class="head">
-                        <span class="right">97% <br><span style="font-size: 11px;"> Off</span></span>
+                        <span class="right">62% <br><span style="font-size: 11px;"> Off</span></span>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/65a268721224df1779b54713/1percent20-93--640x640.jpg" alt="">
+                            <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/658053fa220bcc2821bd8dec/1percent20-218--640x640.jpg" alt="">
                         </a>
                     </div>
                     <div class="para">
@@ -1131,15 +1160,16 @@
                     </div>
                     <br><br>
                     <div class="star-sec">
-                        <span>₹1</span>
+                        <span class="rupee">₹179 </span>
                         <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
+                            <span style="color: rgb(58, 57, 57); font-size: 12px; font-weight: 500;">32 reviews</span>
                         </div>
-                        <button>
+                        <button class="star-foot">
                             Add to cart
                         </button>
                     </div>
@@ -1208,7 +1238,7 @@
     </section>
     <section >
         <div class="nursery">
-            <h1>WELCOME TO INDIA’S ONLINE PLANTS NURSERY TO ADDING BEAUTY TO YOUR GARDEN</h1>
+            <h2>WELCOME TO INDIA’S ONLINE PLANTS NURSERY TO ADDING BEAUTY TO YOUR GARDEN</h2>
             <p>Urvann is a one-stop online plants store presenting the freshest and finest plants for your house, providing next day delivery at your doorstep. Shower the solitude, purity, and love on your house with our exceptional range of indoor plants, air purifying plants, ceramic planters, terracotta pots, bonsai plants, cactus plants, low maintenance plants, vegetable plants, and Good luck plants.</p>
             <span class="nur-button"><a href="">Read More</a></span>
         </div>
@@ -1262,6 +1292,793 @@
             </div>
         </div>
     </section>
+    <footer class="hidden md:block foot-desktop">
+        <div class="top-block border-b border-white py-4">
+          <div class="logo flex justify-center mb-2">
+            <img src="landing-page-images/final-logo-01-1-_cropped-1-480x480.avif" alt="..." />
+          </div>
+          <div class="text-center text-sm mb-5">
+            Urvann is your one-stop online nursery for plants, planters, gardening
+            accessories, and tools. Order fresh plants and get free home delivery
+            on the next day!
+          </div>
+          <div class="flex justify-center items-center social gap-2">
+            <a href="#" class="bg-black text-white text-sm rounded-full grid"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="bg-black text-white text-sm rounded-full grid"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="bg-black text-white text-sm rounded-full grid"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="bg-black text-white text-sm rounded-full grid"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="bg-black text-white text-sm rounded-full grid"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="bg-black text-white text-sm rounded-full grid"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="#" class="bg-black text-white text-sm rounded-full grid"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="middle-block border-b border-white py-4">
+          <div class="links-grid mb-3">
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Information
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >About Us</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Contact Us</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Careers</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Blogs</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Get Help</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Policies
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Refund Policy</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Return Policy</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Cashback Program</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Terms of Service</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Green Team Scheme</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Account
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >My Account</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Wishlist</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Track Order</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Major Categories
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Planters & Pots</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Soil Fertilizers & Pesticides</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Seeds & Bulbs</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Gardening Tools & Equipments</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Gifting</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Decor</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Memberships & Gift Cards</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Sale</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Best Sellers</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Gifting
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Teachers Day Gifts</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Friendship Day Gifts</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Birthday Gifts</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Anniversary Gifts</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Diwali Gifts</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Rakshabandhan Rakhi Gifts</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Anniversary Gifts</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >New Year's Gifting</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Valentines Gifting</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Mother's Day Gifting</a
+                >
+              </div>
+            </div>
+            <div>
+              <div class="block mb-5">
+                <div
+                  class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+                >
+                  Offers under 99
+                </div>
+                <div class="list">
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Under 99 Store</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Plants Under 99</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Indoor Plants Under 99</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Flowering Plants Under 99</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Herbs, Vegetable & Fruits Plants Under 99</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Planters Under 99</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block"
+                    >Ceramic Planters Under 99</a
+                  >
+                </div>
+              </div>
+              <div class="block">
+                <div
+                  class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+                >
+                  Offers under 199
+                </div>
+                <div class="list">
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Under 199 Store</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Plants Under 199</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Indoor Plants Under 199</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                    >Flowering Plants Under 199</a
+                  >
+                  <a
+                    href="#"
+                    class="underline text-lime-700 hover:text-black text-sm block"
+                    >Pots Under 199</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Plants
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Indoor Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Low Maintenance Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Flowering Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Outdoor Foliage Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Religious & Sacred Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Air Purifying Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Cactus & Succulents</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Good Luck Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Plants by Location</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Plants of the Month</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Herbs-Medicinal & Vegetable Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Fruit Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Monsoon Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Hanging Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Potted Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Bonsai Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Special Plant Combos</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Bamboo Plant</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Pet Friendly Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Plants to grow in Water</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Mosquito Repellent Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Climbers & Creepers</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Planters
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Plastic Planters</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Ceramic Planters</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Clay Planters</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Gardening Tools & Equipments
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Watering Tools</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Gardening Tools</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Other Gardening Essentials</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Soil & Fertilizers
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Fertilizers</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Soil add ons</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Potting Mixes</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Pesticides & Insecticides</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Home Decor Plants
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Indoor Home Decor Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Flowering Home Decor Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Outdoor Home Decor Plants</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Best Sellers
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Tulsi</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Jades</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Palms</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Roses</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Hibiscus</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Monsteras</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Snake Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Money Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Bamboo Plants</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Rubber Plants</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Seeds
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Flower Seeds</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Vegetable Seeds</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Herb Seeds</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Membership & Gift Cards
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >Membership Card</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >Gift Cards</a
+                >
+              </div>
+            </div>
+            <div class="block">
+              <div
+                class="head font-bold border-l-4 border-yellow-500 pl-2 mb-3 text-lg"
+              >
+                Sale
+              </div>
+              <div class="list">
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >25% Off</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block mb-1"
+                  >50% Off</a
+                >
+                <a
+                  href="#"
+                  class="underline text-lime-700 hover:text-black text-sm block"
+                  >70% Off</a
+                >
+              </div>
+            </div>
+            <div class="newsletter text-center">
+              <div class="text-lg font-bold">NEWSLETTER</div>
+              <div class="text-sm mb-2">Subscribe to get Email Updates!</div>
+              <form action="" class="grid mx-auto">
+                <input type="text" name="newsletter" class="py-1 px-2" />
+                <button class="bg-slate-100 py-1 text-xs">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="cities text-sm">
+            <span class="font-bold"> We Deliver @ </span>
+            <a href="#" class="underline text-lime-700">Delhi</a> |
+            <a href="#" class="underline text-lime-700">Bangalore</a> |
+            <a href="#" class="underline text-lime-700">Gurugram</a> |
+            <a href="#" class="underline text-lime-700">Ghaziabad</a> |
+            <a href="#" class="underline text-lime-700">Faridabad</a> |
+            <a href="#" class="underline text-lime-700">Noida</a>
+          </div>
+        </div>
+        <div class="py-3 flex justify-between items-center gap-3 text-sm">
+          <div><a href="#">Urvann India Private Limited</a></div>
+          <div class="font-bold">
+            India's Number 1 Choice for Plants | Urvann India Private Limited
+          </div>
+        </div>
+      </footer>
+      <footer class="md:hidden foot-mobile">
+        <div class="top-block grid-col-4 text-center pt-4 pb-3 px-3">
+          <div class="block">
+            <div><i class="fa-regular fa-circle-dot"></i></div>
+            <div>Fresh Plants Guaranteed</div>
+          </div>
+          <div class="block">
+            <div><i class="fa-regular fa-money-bill-1"></i></div>
+            <div>All Payment Methods Accepted</div>
+          </div>
+          <div class="block">
+            <div><i class="fa-solid fa-rotate"></i></div>
+            <div>Free Next Day Delivery</div>
+          </div>
+          <div class="block">
+            <div><i class="fa-regular fa-square-check"></i></div>
+            <div>100% Buyers Protection</div>
+          </div>
+        </div>
+        <div
+          class="middle-block grid-col-4 px-3 py-2 text-xs text-center border-y-2 border-black"
+        >
+          <div class="border-r-2 border-black">
+            <a href="#" class="underline text-lime-700">About Us</a>
+          </div>
+          <div class="border-r-2 border-black">
+            <a href="#" class="underline text-lime-700">Contact</a>
+          </div>
+          <div class="border-r-2 border-black">
+            <a href="#" class="underline text-lime-700">Policies</a>
+          </div>
+          <div>
+            <a href="#" class="underline text-lime-700">Feedback</a>
+          </div>
+        </div>
+        <div class="bottom-block py-3 px-3">
+          <div class="flex justify-center items-center social gap-3">
+            <a href="#" class="text-sm rounded-full grid"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-sm rounded-full grid"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-sm rounded-full grid"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="text-sm rounded-full grid"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-sm rounded-full grid"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="text-sm rounded-full grid"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a href="#" class="text-sm rounded-full grid"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+          <div class="text-xs text-center">
+            Copyright © Urvann India Private Limited
+          </div>
+        </div>
+        <div
+          class="fixed bottom-0 left-0 w-full shadow-lg shadow-slate-500 grid-col-4 py-2 px-3 bg-white text-slate-400 text-center"
+        >
+          <div>
+            <div><i class="fa-solid fa-house"></i></div>
+            <div class="text-xs">Home</div>
+          </div>
+          <div>
+            <div><i class="fa-solid fa-rectangle-list"></i></div>
+            <div class="text-xs">Category</div>
+          </div>
+          <div>
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
+            <div class="text-xs">Cart</div>
+          </div>
+          <div>
+            <div><i class="fa-solid fa-bars"></i></div>
+            <div class="text-xs">Menu</div>
+          </div>
+        </div>
+      </footer>
     <script src="https://kit.fontawesome.com/f841d82552.js" crossorigin="anonymous">       
     </script>
 </body>
