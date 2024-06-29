@@ -113,6 +113,9 @@ button {
     border-color: #f8b300;
     color: white;
 }
+.yellow{
+    background-color: #f8b300;
+}
 .body {
     display: flex;
 }
