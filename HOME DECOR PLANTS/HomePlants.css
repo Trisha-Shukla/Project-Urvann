@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 236px 20px 20px;
+}
+
+
+#HomeDecorPlanta .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    
+    
+}
+#HomeDecorPlanta .first{
+    width: 20%;
+    background-color: white;
+    border: 2px solid rgb(233, 239, 233);
+}
+#HomeDecorPlanta .second{
+    width: 75%;
+    border: 2px solid rgb(244, 243, 241);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#HomeDecorPlanta .product-card {
+    /* position: relative; */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+/* .end{
+    display: flex;
+    justify-content: end;
+} */
+#HomeDecorPlanta .yyy{
+    display: flex;
+    justify-content: start;
+  
+}
+#HomeDecorPlanta .Sale{
+    display: flex;
+    justify-content: star;
+}
+#HomeDecorPlanta .offer-img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#HomeDecorPlanta .offer{
+    position: relative;
+    overflow: hidden;
+
+}
+#HomeDecorPlanta .form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#HomeDecorPlanta .form-input{
+    width: 200%;
+    height: 20px;
+}
+
+#HomeDecorPlanta .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#HomeDecorPlanta .product-card h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+#HomeDecorPlanta .product-card .price {
+    font-size: 16px;
+    color: #e91e63;
+    margin: 0 0 10px;
+}
+
+#HomeDecorPlanta .product-card .original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+#HomeDecorPlanta .product-card .discount {
+    font-size: 14px;
+    color: #388e3c;
+    margin: 0 0 10px;
+}
+
+#HomeDecorPlanta .product-card .description {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+#HomeDecorPlanta .product-card .reviews {
+    font-size: 12px;
+    color: #555;
+}
+#HomeDecorPlanta ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+   
+
+}
+
+
+#HomeDecorPlanta img{
+    width: 400px;
+    height: 300px;
+    text-align: center 10px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.5s ease;
+    overflow: hidden;  
+   
+   
+}
+
+#HomeDecorPlanta .content:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+#HomeDecorPlanta li{
+    width: 8px;
+    height: 8px;
+
+}
+#HomeDecorPlanta .scope{
+    text-decoration: line-through;
+}
+#HomeDecorPlanta button{
+    background-color: #085f0fda;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    width: 200%;
+    padding: 7px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 200px;
+
+}
+
+#HomeDecorPlanta .star{
+    /* width: 100px;
+    margin: auto; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgb(255, 255, 10);
+}
+
+#HomeDecorPlanta .star-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#HomeDecorPlanta .bye-1{
+    background: green;
+    width: 500px;
+} 
+#HomeDecorPlanta .discount{
+
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   background-color: rgb(172, 8, 8);
+   width: 50px;
+   height: 50px;
+   border-bottom-left-radius: 60px;
+   z-index: 5;
+   
+}
+
+#HomeDecorPlanta .cart{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    width: 250px;
+
+}
+#HomeDecorPlanta .Home-p{
+    justify-content: left;
+}
