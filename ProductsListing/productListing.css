@@ -8,6 +8,9 @@ a,
 a:hover {
      text-decoration: none;
 }
+body{
+     padding-top: 216px;
+}
 
 #product-listing-page .inner-grid {
      display: grid;
